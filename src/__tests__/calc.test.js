@@ -14,4 +14,14 @@ describe('second tests wave', () => {
     it('adds numbers', () => {
         expect(stringCalc('1,2')).toBe(3);
     });
-})
+});
+
+describe('3 tests wave', () => {
+    it('adds several numbers', () => {
+        expect(stringCalc('1,2,3,4,5')).toBe(15);
+    });
+
+    it('adds several numbers', () => {
+        expect(stringCalc('1,2,2,3')).toBe(8);
+    });
+});
