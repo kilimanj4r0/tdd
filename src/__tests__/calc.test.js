@@ -25,3 +25,13 @@ describe('3 tests wave', () => {
         expect(stringCalc('1,2,2,3')).toBe(8);
     });
 });
+
+describe('4 tests wave', () => {
+    it('handles new line', () => {
+        expect(stringCalc('1\n2,3')).toBe(6);
+    });
+
+    it('handles new line', () => {
+        expect(stringCalc('1,2\n3,1')).toBe(7);
+    });
+})
