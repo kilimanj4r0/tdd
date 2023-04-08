@@ -34,4 +34,14 @@ describe('4 tests wave', () => {
     it('handles new line', () => {
         expect(stringCalc('1,2\n3,1')).toBe(7);
     });
-})
+});
+
+describe('5 handle custom delimiter like "//[delimiter]\n[numbers...]"', () => {
+    it('handle ; as delimeter', () => {
+        expect(stringCalc('//;\n1;2')).toBe(3);
+    });
+
+    it('handles p as delimeter', () => {
+        expect(stringCalc('//p\n1p2p4')).toBe(7);
+    });
+});
